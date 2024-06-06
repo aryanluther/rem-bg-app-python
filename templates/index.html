@@ -1,25 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Background Removal Application</title>
-    <link rel="sytlesheet" href="styles.css">
-    <script src="scripts.js"></script>
-</head>
-<body>
-    <div id="dropZone" class="drop-zone">
-        <h1>rmbg</h1>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Background Removal Application</title>
+      <link href=
+"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+          rel="stylesheet">
+      <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="font-mono flex flex-col p-20 pt-40 items-center ">
+      <h1 class="text-3xl">Remove Background of your Image</h1>
+      <div id="dropZone" class="bg-grey ">
+        <br>
         <form
           id="uploadForm"
           action="/"
           method="post"
-          enctype="multipart/form-data"
-        >
+          enctype="multipart/form-data"> Input 
           <input id="fileInput" type="file" name="file" />
-          <input type="submit" value="rm" />
+          <br>
+          <input type="submit" value="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg cursor-pointer"/>
         </form>
       </div>
-    
-</body>
-</html>
+    </div>      
+  </body>
+  </html> 
